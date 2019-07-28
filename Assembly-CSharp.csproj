@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\LevelLoader.cs" />
+    <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Readme.cs" />
     <None Include="Assets\epyphany\ReadMe.txt" />
     <Reference Include="UnityEditor.StandardEvents">
