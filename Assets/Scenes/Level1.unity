@@ -364,8 +364,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 140575375}
-  lookAheadForTargetOffset: 3
-  lookAheadForTargetFactor: 0.1
+  lookAheadForTargetOffset: 2
+  lookAheadForTargetFactor: -0.02
   lookAheadForSpeedOffset: 2
   lookAheadForSpeedFactor: 0
   progressStyle: 0
@@ -384,7 +384,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4223602988361968, guid: 077841c1c84205945850daf9999dc11d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 9.14
+      value: 8.95
       objectReference: {fileID: 0}
     - target: {fileID: 4223602988361968, guid: 077841c1c84205945850daf9999dc11d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -520,6 +520,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSpeed: 40
   xRange: 13
+  positionPitchFactor: -2
+  positionYawFactor: 2
+  movingPitchFactor: -10
+  movingRollFactor: -20
 --- !u!1 &1354701772
 GameObject:
   m_ObjectHideFlags: 0
