@@ -6,7 +6,10 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour {
 
     [Tooltip("In ms^-1")][SerializeField] float xSpeed = 40f;
-    [SerializeField] float xRange = 13f;
+    [SerializeField] float xRangeRIGHT = 20f;
+    [SerializeField] float xRangeLEFT = -20f;
+    [SerializeField] float yRangeUP = 13f;
+    [SerializeField] float yRangeDOWN = -13f;
 
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float positionYawFactor = 2f;
@@ -40,7 +43,7 @@ public class Player : MonoBehaviour {
         float rawNewXPos = transform.localPosition.x + xoffset;
         float rawNewYPos = transform.localPosition.y + yoffset;
 
-        transform.localPosition = new Vector3(Mathf.Clamp(rawNewXPos, -xRange, xRange), Mathf.Clamp(rawNewYPos, -8, 9), transform.localPosition.z);
+        transform.localPosition = new Vector3(Mathf.Clamp(rawNewXPos, xRangeLEFT, xRangeRIGHT), Mathf.Clamp(rawNewYPos, yRangeDOWN, yRangeUP), transform.localPosition.z);
     }
     private void RotationControl()
     {
