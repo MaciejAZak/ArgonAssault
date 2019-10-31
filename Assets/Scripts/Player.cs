@@ -22,9 +22,19 @@ public class Player : MonoBehaviour {
     void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    void OnCollisionEnter(Collision collision)
+    {
+        print("Player collidied");
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        print("Trigger explosion on players' position");
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
         PositionControl();
         RotationControl();
